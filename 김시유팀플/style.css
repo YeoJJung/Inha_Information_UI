@@ -52,7 +52,7 @@ ul {
 }
 
 #button-container button {
-  color: rgb(0, 170, 255);
+  color: var(--color-primary-700);
   display: inline-block;
   width: 17%;
   padding: 0.7rem;
