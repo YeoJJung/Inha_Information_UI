@@ -1,36 +1,74 @@
 html {
-    --color-grey-100: rgb(236, 236, 236);
-    --color-grey-400: rgb(134, 134, 134);
-    --color-grey-600: rgb(58, 58, 58);
-    --color-grey-900: rgb(41, 41, 41);
-  
-    --color-pirmary-300: rgb(167, 226, 255);
-    --color-primary-700: rgb(0, 170, 255);
-  
-    --size-1: 18px;
-    --size-5: 50px;
-  
-    background-color: var(--color-grey-100);
-    font-family: "Noto Sans KR", sans-serif;
-    font-weight: 400;
-  }
+  --color-grey-100: rgb(236, 236, 236);
+  --color-grey-400: rgb(134, 134, 134);
+  --color-grey-600: rgb(58, 58, 58);
+  --color-grey-900: rgb(41, 41, 41);
 
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .logoInhaUniv {
-    margin: 1rem;
-    border-radius: 10px;
-    box-shadow: 1px 1px 4px rgba(68, 67, 67,0.5);
-  }
+  --color-pirmary-300: rgb(167, 226, 255);
+  --color-primary-700: rgb(0, 170, 255);
 
+  --size-1: 18px;
+  --size-5: 50px;
 
-section .food-container{
+  background-color: var(--color-grey-100);
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+}
+body {
+  align-items: center;
+  color: var(--color-grey-900);
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.logoInhaUniv {
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px rgba(68, 67, 67, 0.5);
+}
+.menu {
+  text-align: center;
+  
+}
+.menu h1 {
+  font-size: var(--size-5);
+  margin-top: 0; 
+}
+.menu p {
+  font-size: var(--size-1);
+}
+#firstMenu-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+  margin: 1rem auto 1.5rem auto;
+}
+.toGoLeft .toGoRight {
+  padding-top: 1rem;
+}
+.menu-button {
+  color: var(--color-primary-700);
+  padding: 0.7rem;
+  margin: 0;
+  border: 1px solid var(--color-grey-400);
+  border-radius: 6px;
+  font-size: 2rem;
+  transition: background-color 1s ease-out;
+  cursor: pointer;
+}
+.menu-button:hover {
+  color: white;
+  background-color: var(--color-primary-700);
+  border: 1px solid rgb(255, 255, 255);
+}
+
+section .food-container {
   text-align: center;
 }
-section .food-list{
+section .food-list {
   background-color: #fff;
   width: 20%;
   padding: 2rem;
@@ -39,21 +77,40 @@ section .food-list{
   margin-right: 0.5rem;
   text-align: center;
 }
-.food-list h3{
+.food-list h3 {
   font-size: 30px;
   letter-spacing: 30px;
   margin-left: 1.5rem;
   line-height: 1;
 }
 
-.food-list h4{
+.food-list h4 {
   font-size: 25px;
   text-decoration: underline;
   line-height: 1;
   margin-bottom: 5rem;
 }
-.food-list p{
+.food-list p {
   font-size: 20px;
   line-height: 1;
 }
-
+footer ul {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 4rem;
+}
+footer li {
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem 3rem;
+}
+.icon {
+  text-decoration: none;
+  color: var(--color-grey-900);
+}
+.icon:hover {
+  transform: scale(1.05);
+}
+.icon:active {
+  color: var(--color-primary-700);
+}

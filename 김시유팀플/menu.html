@@ -1,67 +1,86 @@
 <!DOCTYPE html>
-< lang="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>INHA</title>
-    <link rel="stylesheet" href="menu.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="menu.css" />
     <script
       src="https://kit.fontawesome.com/51099c4b9d.js"
       crossorigin="anonymous"
     ></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <img
-          src="images/logoinhauniv.jpg"
-          alt="logo-INHA University"
-          class="logoInhaUniv"
-        />
-      </header>
-      <section>
-        <h1>교직원 식당 메뉴</h1>
-        <div id="firstMenu-container">
-            <i class="fa-regular fa-bracket-round fa-2x"></i>
-            <span>12월 5일(월) ~ 12월 9일(금)</span> 
-            <i class="fa-regular fa-bracket-round-right fa-sx"></i>
-            <div>
-                <a href="" title="이전 주 식단으로 이동" class="goToLeft">
-                    <i class="fa-regular fa-chevrons-left"></i>
-                </a>
-    
-                <a href="" title="다음 주 식단으로 이동" class="goToRight">
-                    <i class="fa-regular fa-chevrons-right"></i>
-                </a>            
-
-            </div>
+      <img
+        src="images/logoinhauniv.jpg"
+        alt="logo-INHA University"
+        class="logoInhaUniv"
+      />
+    </header>
+    <section class="menu">
+      <h1>교직원 식당 메뉴</h1>
+      <p>( 12월 5일(월) ~ 12월 9일(금) )</p>
+      <div id="firstMenu-container">
+        <a href="" title="이전 주 메뉴" class="toGoLeft">
+          <i class="fa-solid fa-angles-left fa-2x"></i>
+        </a>
+        <div class="daily-menuButton">  
+          <button class="menu-button">월</button>
+          <button class="menu-button">화</button>
+          <button class="menu-button">수</button>
+          <button class="menu-button">목</button>
+          <button class="menu-button">금</button>
         </div>
-      </section>
+        <a href="" title="다음 주 메뉴" class="toGoRight">
+          <i class="fa-solid fa-angles-right fa-2x"></i>
+        </a>  
+      </div>        
+    </section>
 
-      <section class="food">
-        <div class="food-container">
-          <div class="food-list">
-            <h3>조식</h3>
-            <h4>7:30 ~ 9:00</h4>
-            <p>갈비탕</p>
-            <!--자바스크립트 적용-->
-          </div>
-          <div class="food-list">
-            <h3>중식</h3>
-            <h4>11:30 ~ 13:30</h4>
-            <p>갈비탕</p>
-            <!--자바스크립트 적용-->
-          </div>
-          <div class="food-list">
-            <h3>석식</h3>
-            <h4>17:30 ~ 19:30</h4>
-            <p>갈비탕</p>
-            <!--자바스크립트 적용-->
-          </div>
+    <section class="food">
+      <div class="food-container">
+        <div class="food-list">
+          <h3>조식</h3>
+          <h4>7:30 ~ 9:00</h4>
+          <p>갈비탕</p>
+          <!--자바스크립트 적용-->
         </div>
-      </section>
-      </body>      
+        <div class="food-list">
+          <h3>중식</h3>
+          <h4>11:30 ~ 13:30</h4>
+          <p>갈비탕</p>
+          <!--자바스크립트 적용-->
+        </div>
+        <div class="food-list">
+          <h3>석식</h3>
+          <h4>17:30 ~ 19:30</h4>
+          <p>갈비탕</p>
+          <!--자바스크립트 적용-->
+        </div>
+      </div>
+    </section>
+    <footer class="icons">
+      <ul>
+        <li>
+          <a href="" class="icon">
+            <i class="fa-solid fa-rotate-left fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="index.html" class="icon">
+            <i class="fa-solid fa-house-chimney fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
-
