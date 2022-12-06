@@ -1,84 +1,96 @@
 html {
-    --color-grey-100: rgb(236, 236, 236);
-    --color-grey-400: rgb(134, 134, 134);
-    --color-grey-600: rgb(58, 58, 58);
-    --color-grey-900: rgb(41, 41, 41);
-  
-    --color-pirmary-300: rgb(167, 226, 255);
-    --color-primary-700: rgb(0, 170, 255);
-  
-    --size-1: 18px;
-    --size-5: 50px;
-  
-    background-color: var(--color-grey-100);
-    font-family: "Noto Sans KR", sans-serif;
-    font-weight: 400;
-  }
-#stair5{
-    width: 5%;
-    margin-right: 5%;
-    background-color: var(--color-primary-700);
-    line-height: 3.4rem;
-    color:var(--color-primary-700);
+  --color-grey-100: rgb(236, 236, 236);
+  --color-grey-400: rgb(134, 134, 134);
+  --color-grey-600: rgb(58, 58, 58);
+  --color-grey-900: rgb(41, 41, 41);
+
+  --color-pirmary-300: rgb(167, 226, 255);
+  --color-primary-700: rgb(0, 170, 255);
+
+  --size-1: 18px;
+  --size-5: 50px;
+
+  background-color: var(--color-grey-100);
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
 }
-#stair4{
-    width: 10%;
-    margin-right: 5%;
-    background-color: var(--color-primary-700);
-    line-height: 3.4rem;
-    color: var(--color-primary-700);
-}
-#stair3{
-    width: 15%;
-    margin-right: 5%;
-    background-color: var(--color-primary-700);
-    line-height: 3.4rem;
-    color: var(--color-primary-700);
-}
-#stair2{
-    width: 20%;
-    margin-right: 5%;
-    background-color: var(--color-primary-700);
-    line-height: 3.4rem;
-    color: var(--color-primary-700);
-}
-#stair1{
-    width: 25%;
-    margin-right: 5%;
-    background-color: var(--color-primary-700);
-    line-height: 3.4rem;
-    color: var(--color-primary-700);
-}
-#stairB1{
-    width: 30%;
-    margin-right: 5%;
-    background-color: var(--color-primary-700);
-    line-height: 3.4rem;
-    color: var(--color-primary-700);
-}
-#stairB2{
-    width: 35%;
-    margin-right: 5%;
-    background-color: var(--color-primary-700);
-    line-height: 3.4rem;
-    color: var(--color-primary-700);
+.logoInhaUniv {
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px rgba(68, 67, 67, 0.5);
 }
 
-.floor-container::after{
-    content: "";
-    display: block;
-    clear: both;
+#stair5 {
+  width: 5%;
+  margin-right: 5%;
+  background-color: var(--color-primary-700);
+  line-height: 3.4rem;
+  color: var(--color-primary-700);
+}
+#stair4 {
+  width: 10%;
+  margin-right: 5%;
+  background-color: var(--color-primary-700);
+  line-height: 3.4rem;
+  color: var(--color-primary-700);
+}
+#stair3 {
+  width: 15%;
+  margin-right: 5%;
+  background-color: var(--color-primary-700);
+  line-height: 3.4rem;
+  color: var(--color-primary-700);
+}
+#stair2 {
+  width: 20%;
+  margin-right: 5%;
+  background-color: var(--color-primary-700);
+  line-height: 3.4rem;
+  color: var(--color-primary-700);
+}
+#stair1 {
+  width: 25%;
+  margin-right: 5%;
+  background-color: var(--color-primary-700);
+  line-height: 3.4rem;
+  color: var(--color-primary-700);
+}
+#stairB1 {
+  width: 30%;
+  margin-right: 5%;
+  background-color: var(--color-primary-700);
+  line-height: 3.4rem;
+  color: var(--color-primary-700);
+}
+#stairB2 {
+  width: 35%;
+  margin-right: 5%;
+  background-color: var(--color-primary-700);
+  line-height: 3.4rem;
+  color: var(--color-primary-700);
 }
 
-.Floor{
-    float: left;
+.floor-container::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
-.button-container button{
+.Floor {
+  float: left;
+}
+
+.button-container button {
+  margin-left: 1rem;
+  margin-top: 0.7rem;
+  border-radius: 1rem;
+  line-height: 1.5rem;
+  font-size: 20px;
+  cursor: pointer;
+}
+.button-container p{
     margin-left: 1rem;
     margin-top: 0.5rem;
-    border-radius: 1rem;
     line-height: 1.5rem;
     font-size: 20px;
-    cursor: pointer;
 }
