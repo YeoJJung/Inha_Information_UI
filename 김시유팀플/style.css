@@ -25,7 +25,7 @@ ul {
 .logoInhaUniv {
   margin: 1rem;
   border-radius: 10px;
-  box-shadow: 1px 1px 4px rgba(68, 67, 67,0.5);
+  box-shadow: 1px 1px 4px rgba(68, 67, 67, 0.5);
 }
 .campus-map {
   width: 80%;
@@ -44,11 +44,19 @@ ul {
   padding: 0;
   margin: 1rem 1rem;
 }
-#notice span{
+#notice span {
   font-weight: 1000;
 }
 #button-container {
   text-align: center;
+}
+#button-container a {
+  text-decoration: none;
+  color: var(--color-grey-100);
+  font-size: 1.8rem;
+}
+#button-container a:hover {
+  color: var(--color-primary-700);
 }
 
 #button-container button {
@@ -69,7 +77,29 @@ ul {
   background-color: var(--color-primary-700);
   border: 1px solid rgb(255, 255, 255);
 }
-footer ul {
+#Pop_c {
+  position: absolute;
+  right: 0;
+  top: 6rem;
+  z-index: 1;
+  display: none;
+  width: 20%;
+  height: 66%;
+  background-color: rgba(58, 58, 58, 0.8);
+}
+.pop-1container {
+  padding: 3rem 1rem 1rem 1rem;
+  list-style: none;
+
+}
+.pop-1 {
+  padding: 2rem 0 ;
+}
+.pop-1image {
+  width: 95%;
+}
+
+footer   ul {
   display: flex;
   justify-content: center;
   padding: 2rem 4rem;

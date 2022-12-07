@@ -16,6 +16,7 @@
       src="https://kit.fontawesome.com/51099c4b9d.js"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </head>
 
   <body>
@@ -38,18 +39,41 @@
         <p>검색하고 싶은 <span>건물의 버튼</span>을 클릭해주세요</p>
       </section>
       <section id="button-container">
-        <button class="button">[1] 1호관(본관)</button>
+        <a href="javascript:ViewLayer();">
+          <button class="button">[1] 1호관(본관)</button>
+        </a>
+        <div id="Pop_c">
+          <ul class="pop-1container">
+            <li class="pop-1">
+              <img src="images/1호관(본관).png" alt="1호관 이미지" class="pop-1image">
+            </li>
+            <li class="pop-1">
+              <a href="menu.html">교직원식당 메뉴</a>
+            </li>            
+          </ul>
+        </div>
         <button class="button">[2] 2호관</button>
         <button class="button">[3] 60주년 기념관</button>
         <button class="button">[5] 5호관</button>
         <button class="button">[6] 6호관</button>
         <button class="button">[7] 7호관(학생회관)</button>
-        <button class="button">[8] 정석학술정보관</button>
+        <a href="javascript:ViewLayer();">
+          <button class="button">[8] 정석학술정보관</button>
+        </a>
+        <div id="Pop_c">
+          <ul class="pop-1container">
+            <li class="pop-1">
+              <img src="images/정석.png" alt="정석학술정보관 이미지" class="pop-1image">
+            </li>
+            <li class="pop-1">
+              <a href="LIB-001.html">층별 안내도</a>
+            </li>            
+          </ul>
+        </div>
         <button class="button">[9] 9호관</button>
         <button class="button">[12] 하이테크</button>
         <button class="button">[24] 1기숙사</button>
       </section>
-
     </main>
     <footer class="icons">
       <ul>
