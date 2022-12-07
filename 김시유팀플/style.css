@@ -90,7 +90,11 @@ ul {
 .pop-1container {
   padding: 3rem 1rem 1rem 1rem;
   list-style: none;
-
+}
+.pop-1container p{
+  margin-top: 0;
+  color: var(--color-grey-100);
+  font-size: 1.5rem;
 }
 .pop-1 {
   padding: 2rem 0 ;
