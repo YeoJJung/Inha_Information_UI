@@ -58,7 +58,6 @@ ul {
 #button-container a:hover {
   color: var(--color-primary-700);
 }
-
 #button-container button {
   color: var(--color-primary-700);
   display: inline-block;
@@ -77,7 +76,7 @@ ul {
   background-color: var(--color-primary-700);
   border: 1px solid rgb(255, 255, 255);
 }
-#Pop_c {
+#Pop_c, #Pop_d {
   position: absolute;
   right: 0;
   top: 6rem;
@@ -90,25 +89,14 @@ ul {
 .pop-1container {
   padding: 3rem 1rem 1rem 1rem;
   list-style: none;
-
 }
 .pop-1 {
-  padding: 2rem 0 ;
+  padding: 2rem 0;
 }
 .pop-1image {
   width: 95%;
 }
-#Pop_d {
-  position: absolute;
-  right: 0;
-  top: 6rem;
-  z-index: 1;
-  display: none;
-  width: 20%;
-  height: 66%;
-  background-color: rgba(58, 58, 58, 0.8);
-}
-footer   ul {
+footer ul {
   display: flex;
   justify-content: center;
   padding: 2rem 4rem;
