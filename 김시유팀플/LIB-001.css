@@ -14,6 +14,15 @@ html {
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 400;
 }
+body {
+  align-items: center;
+  color: var(--color-grey-900);
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 .logoInhaUniv {
   margin: 1rem;
   border-radius: 10px;
@@ -94,4 +103,24 @@ html {
     line-height: 1.5rem;
     font-size: 20px;
     float: left;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 4rem;
+}
+footer li {
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem 3rem;
+}
+.icon {
+  text-decoration: none;
+  color: var(--color-grey-900);
+}
+.icon:hover {
+  transform: scale(1.05);
+}
+.icon:active {
+  color: var(--color-primary-700);
 }
