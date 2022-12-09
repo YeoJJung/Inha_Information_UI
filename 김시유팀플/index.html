@@ -16,7 +16,6 @@
       src="https://kit.fontawesome.com/51099c4b9d.js"
       crossorigin="anonymous"
     ></script>
-    
   </head>
 
   <body>
@@ -38,43 +37,201 @@
       <section id="notice">
         <p>검색하고 싶은 <span>건물의 버튼</span>을 클릭해주세요</p>
       </section>
+
       <section id="button-container">
-        <a href="javascript:ViewLayer();">
+        <a href="#pop_info_1" class="btn_open">
           <button class="button">[1] 1호관 (본관)</button>
         </a>
-        <div id="pop_c">
-          <ul class="pop-1container">
-            <p>[1] 1호관 (본관)</p>
-            <li class="pop-1">
-              <img src="images/1호관(본관).png" alt="1호관 이미지" class="pop-1image">
-            </li>
-            <li class="pop-1">
-              <a href="menu.html">교직원식당 메뉴</a>
-            </li>            
-          </ul>
+        <div id="pop_info_1" class="pop_wrap" style="display: none">
+          <div class="pop_inner">
+            <ul class="pop-1container">
+              <p>[1] 1호관 (본관)</p>
+              <li class="pop-1">
+                <img src="images/1호관(본관).png" alt="1호관 이미지" />
+              </li>
+              <li class="pop-1">
+                <a href="menu.html">교직원식당 메뉴</a>
+              </li>
+            </ul>
+            <button type="button" class="btn_close">닫기</button>
+          </div>
         </div>
-        <button class="button">[2] 2호관</button>
-        <button class="button">[3] 60주년 기념관</button>
-        <button class="button">[5] 5호관</button>
-        <button class="button">[6] 6호관</button>
-        <button class="button">[7] 7호관 (학생회관)</button>
-        <!-- <a href="javascript:ViewLayer();">
+
+        <a href="#pop_info_2" class="btn_open">
+          <button class="button">[2] 2호관</button>
+        </a>
+        <div id="pop_info_2" class="pop_wrap" style="display: none">
+          <div class="pop_inner">
+            <ul class="pop-1container">
+              <p>[2] 2호관</p>
+              <li class="pop-1">
+                <img src="images/2+4호관.png" alt="2호관 이미지" />
+              </li>
+              <li class="pop-1">
+                <a href="major.html">학과 사무실 안내</a>
+              </li>
+              <li>기계공학과</li>
+              <li>전기공학과</li>
+              <li>화학공학과</li>
+            </ul>
+            <button type="button" class="btn_close">닫기</button>
+          </div>
+        </div>
+
+        <a href="#pop_info_3" class="btn_open">
+          <button class="button">[3] 60주년 기념관</button>
+        </a>
+        <div id="pop_info_3" class="pop_wrap" style="display: none">
+          <div class="pop_inner">
+            <ul class="pop-1container">
+              <p>[3] 60주년 기념관</p>
+              <li class="pop-1">
+                <img src="images/60주년.png" alt="60주년기념관 이미지" />
+              </li>
+              <li class="pop-1">
+                <a href="major.html">학과 사무실 안내</a>
+              </li>
+              <li class="pop-1">
+                <a href="major.html">빈 강의실 조회</a>
+              </li>
+              <li class="pop-1">
+                <a href="major.html">스터디 라운지 조회</a>
+              </li>
+            </ul>
+            <button type="button" class="btn_close">닫기</button>
+          </div>
+        </div>
+
+        <a href="#pop_info_4" class="btn_open">
+          <button class="button">[5] 5호관</button>
+        </a>
+        <div id="pop_info_4" class="pop_wrap" style="display: none">
+          <div class="pop_inner">
+            <ul class="pop-1container">
+              <p>[5] 5호관</p>
+              <li class="pop-1">
+                <img src="images/5호관.png" alt="5호관 이미지" />
+              </li>
+              <li class="pop-1">
+                <a href="major.html">학과 사무실 안내</a>
+              </li>
+            </ul>
+            <button type="button" class="btn_close">닫기</button>
+          </div>
+        </div>
+
+        <a href="#pop_info_5" class="btn_open">
+          <button class="button">[6] 6호관</button>
+        </a>
+        <div id="pop_info_5" class="pop_wrap" style="display: none">
+          <div class="pop_inner">
+            <ul class="pop-1container">
+              <p>[6] 6호관</p>
+              <li class="pop-1">
+                <img src="images/6호관.png" alt="6호관 이미지" />
+              </li>
+              <li class="pop-1">
+                <a href="major.html">학과 사무실 안내</a>
+              </li>
+            </ul>
+            <button type="button" class="btn_close">닫기</button>
+          </div>
+        </div>
+
+        <a href="#pop_info_6" class="btn_open">
+          <button class="button">[7] 7호관 (학생회관)</button>
+        </a>
+        <div id="pop_info_6" class="pop_wrap" style="display: none">
+          <div class="pop_inner">
+            <ul class="pop-1container">
+              <p>[7] 7호관 (학생회관)</p>
+              <li class="pop-1">
+                <img src="images/학생회관.png" alt="7호관(학생회관) 이미지" />
+              </li>
+              <li class="pop-1">
+                <a href="menu.html">학생회관 식당 메뉴</a>
+              </li>
+            </ul>
+            <button type="button" class="btn_close">닫기</button>
+          </div>
+        </div>
+
+        <a href="#pop_info_7" class="btn_open">
           <button class="button">[8] 정석학술정보관</button>
         </a>
-        <div id="Pop_d">
-          <ul class="pop-1container">
-            <p>[8] 정석학술정보관</p>
-            <li class="pop-1">
-              <img src="images/정석.png" alt="정석학술정보관 이미지" class="pop-1image">
-            </li>
-            <li class="pop-1">
-              <a href="LIB-001.html">층별 안내도</a>
-            </li>            
-          </ul>
-        </div> -->
-        <button class="button">[9] 9호관</button>
-        <button class="button">[12] 하이테크</button>
-        <button class="button">[24] 1기숙사</button>
+        <div id="pop_info_7" class="pop_wrap" style="display: none">
+          <div class="pop_inner">
+            <ul class="pop-1container">
+              <p>[8] 정석학술정보관</p>
+              <li class="pop-1">
+                <img src="images/정석.png" alt="정석학술정보관 이미지" />
+              </li>
+              <li class="pop-1">
+                <a href="LIB-001.html">층별 안내도</a>
+              </li>
+            </ul>
+            <button type="button" class="btn_close">닫기</button>
+          </div>
+        </div>
+
+        <a href="#pop_info_8" class="btn_open">
+          <button class="button">[9] 9호관</button>
+        </a>
+        <div id="pop_info_8" class="pop_wrap" style="display: none">
+          <div class="pop_inner">
+            <ul class="pop-1container">
+              <p>[9] 9호관</p>
+              <li class="pop-1">
+                <img src="images/9호관.png" alt="9호관 이미지" />
+              </li>
+              <li class="pop-1">
+                <a href="major.html">학과 사무실 안내</a>
+              </li>
+            </ul>
+            <button type="button" class="btn_close">닫기</button>
+          </div>
+        </div>
+
+        <a href="#pop_info_9" class="btn_open">
+          <button class="button">[12] 하이테크센터</button>
+        </a>
+        <div id="pop_info_9" class="pop_wrap" style="display: none">
+          <div class="pop_inner">
+            <ul class="pop-1container">
+              <p>[12] 하이테크센터</p>
+              <li class="pop-1">
+                <img src="images/하이테크센터.png" alt="9호관 이미지" />
+              </li>
+              <li class="pop-1">
+                <a href="major.html">학과 사무실 안내</a>
+              </li>
+            </ul>
+            <button type="button" class="btn_close">닫기</button>
+          </div>
+        </div>
+
+        <a href="#pop_info_10" class="btn_open">
+          <button class="button">[24] 제1생활관(웅비재)</button>
+        </a>
+        <div id="pop_info_10" class="pop_wrap" style="display: none">
+          <div class="pop_inner">
+            <ul class="pop-1container">
+              <p>[24] 제1생활관(웅비재)</p>
+              <li class="pop-1">
+                <img src="images/1기숙사.png" alt="제1생활관(웅비재) 이미지" />
+              </li>
+              <li class="pop-1">
+                <a href="menu.html">주간식단표</a>
+              </li>
+              <li class="pop-1">
+                <a href="https://dorm.inha.ac.kr/dorm/10137/subview.do"
+                  >외박신고 (링크)</a
+                >
+              </li>
+            </ul>
+            <button type="button" class="btn_close">닫기</button>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="icons">

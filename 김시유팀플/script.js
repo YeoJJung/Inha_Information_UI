@@ -1,17 +1,18 @@
-// function ViewLayer() {
-//   document.getElementsByClassName('Pop_c').style.display = "inline";
-// }
-// function ViewLayer() {
-//     document.getElementById("Pop_d").style.display = "inline";
-//   }
+var target = document.querySelectorAll(".btn_open");
+var btnPopClose = document.querySelectorAll(".pop_wrap .btn_close");
+var targetID;
 
-function ViewLayer() {
-  var con = document.getElementById("pop_c");
-  if (con.style.display == "none") {
-    con.style.display = "block";
-  } else {
-    con.style.display = "none";
-  }
+// 팝업 열기
+for (var i = 0; i < target.length; i++) {
+  target[i].addEventListener("click", function () {
+    targetID = this.getAttribute("href");
+    document.querySelector(targetID).style.display = "block";
+  });
 }
 
- 
+// 팝업 닫기
+for (var j = 0; j < target.length; j++) {
+  btnPopClose[j].addEventListener("click", function () {
+    this.parentNode.parentNode.style.display = "none";
+  });
+}
