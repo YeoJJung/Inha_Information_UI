@@ -1,0 +1,38 @@
+a {
+  text-decoration: none;
+}
+.wrap {
+  padding: 10px;
+}
+
+.btn_open {
+  font-weight: bold;
+  margin: 5px;
+  padding: 10px 10px 10px 10px;
+  background: #000;
+  color: #fff;
+}
+.pop_wrap {
+  position: fixed;
+  top: -70%;
+  left: 70%;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  text-align: center;
+}
+.pop_wrap:after {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  content: "";
+}
+.pop_wrap .pop_inner {
+  display: inline-block;
+  padding: 20px 30px;
+  background: white;
+  width: 200px;
+  vertical-align: middle;
+  font-size: 15px;
+}

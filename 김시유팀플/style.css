@@ -58,7 +58,7 @@ ul {
 #button-container a:hover {
   color: var(--color-primary-700);
 }
-#button-container button {
+.button {
   color: var(--color-primary-700);
   display: inline-block;
   width: 17%;
@@ -71,27 +71,55 @@ ul {
   transition: background-color 1s ease-out;
   cursor: pointer;
 }
-#button-container button:hover {
+.button:hover {
   color: white;
   background-color: var(--color-primary-700);
   border: 1px solid rgb(255, 255, 255);
 }
-#Pop_c, #Pop_d {
+.pop_wrap {
   position: absolute;
+  top: 0;
+  left: 0;
   right: 0;
-  top: 6rem;
-  z-index: 1;
-  display: none;
-  width: 20%;
-  height: 66%;
-  background-color: rgba(58, 58, 58, 0.8);
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 1rem;
+  text-align: center;
+}
+.pop_wrap:after {
+  display: inline-block;
+  height: 50%;
+  vertical-align: middle;
+  content: "";
+}
+.pop_wrap .pop_inner {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 15px;
+}
+.btn_close {
+  color: var(--color-primary-700);
+  display: inline-block;
+  width: 50%;
+  padding: 0.7rem;
+  margin: 1rem 1rem;
+  border: 2px solid rgb(224, 224, 224);
+  border-radius: 6px;
+  font-size: var(--size-1);
+  font-weight: 600;
+  transition: background-color 1s ease-out;
+  cursor: pointer;
+}
+.btn_close:hover {
+  color: white;
+  background-color: var(--color-primary-700);
+  border: 1px solid rgb(255, 255, 255);
 }
 .pop-1container {
   padding: 3rem 1rem 1rem 1rem;
   list-style: none;
-
 }
-.pop-1container p{
+.pop-1container p {
   margin-top: 0;
   color: var(--color-grey-100);
   font-size: 1.5rem;
@@ -99,8 +127,10 @@ ul {
 .pop-1 {
   padding: 2rem 0;
 }
-.pop-1image {
-  width: 95%;
+.pop-1 img {
+  height: 200px;
+  width: auto;
+  object-fit: cover;
 }
 footer ul {
   display: flex;
