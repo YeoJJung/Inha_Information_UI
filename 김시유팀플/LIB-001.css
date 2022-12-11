@@ -23,6 +23,9 @@ ul {
   margin: 0;
   padding: 0;
 }
+h2 {
+  margin-top: 0;
+}
 .logoInhaUniv {
   margin: 1rem;
   border-radius: 10px;
@@ -92,7 +95,8 @@ ul {
 .button-container button {
   margin-left: 1rem;
   margin-top: 0.7rem;
-  border-radius: 1rem;
+  padding: 0.4rem;
+  border-radius: 13px;
   line-height: 1.5rem;
   font-size: 20px;
   cursor: pointer;
