@@ -97,6 +97,10 @@ ul {
   font-size: 20px;
   cursor: pointer;
 }
+.button-container button:hover{
+  border-color: var(--color-primary-700);
+  color: var(--color-primary-700);
+}
 .button-container p{
     margin-left: 1rem;
     margin-top: 0.5rem;
@@ -114,7 +118,7 @@ footer li {
   height: 2rem;
   margin: 1rem 3rem;
 }
-.icon {
+.icons {
   text-decoration: none;
   color: var(--color-grey-900);
 }
