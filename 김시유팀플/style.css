@@ -95,14 +95,14 @@ ul {
 .pop_wrap .pop_inner {
   display: inline-block;
   vertical-align: middle;
-  font-size: 15px;
+  font-size: var(--size-1);
 }
 .btn_close {
   color: var(--color-primary-700);
   display: inline-block;
   width: 50%;
   padding: 0.7rem;
-  margin: 1rem 1rem;
+  
   border: 2px solid rgb(224, 224, 224);
   border-radius: 6px;
   font-size: var(--size-1);
@@ -124,8 +124,14 @@ ul {
   color: var(--color-grey-100);
   font-size: 1.5rem;
 }
+.pop-12 {
+  color: var(--color-primary-700);
+  
+}
 .pop-1 {
-  padding: 2rem 0;
+  padding: 1rem 0;
+  color: var(--color-grey-100);
+  font-size: 1.5rem;
 }
 .pop-1 img {
   height: 200px;
