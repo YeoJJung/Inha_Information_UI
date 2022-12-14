@@ -1,0 +1,77 @@
+html {
+    --color-grey-100: rgb(236, 236, 236);
+    --color-grey-400: rgb(134, 134, 134);
+    --color-grey-600: rgb(58, 58, 58);
+    --color-grey-900: rgb(41, 41, 41);
+
+    --color-pirmary-300: rgb(167, 226, 255);
+    --color-primary-700: rgb(0, 170, 255);
+
+    --size-1: 18px;
+    --size-5: 50px;
+
+    background-color: var(--color-grey-100);
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+}
+
+.container{
+    margin: 0 3rem 8rem 3rem;
+    
+}
+.container::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container h1{
+    margin: 1.5rem 0 1rem 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+.container h3 {
+    margin: 1.5rem 0 1rem 2rem;
+    font-size: 1.5rem;
+}
+
+.location-container {
+    float: left;
+    margin: 0 1.2rem;
+    margin-bottom: 2rem;
+    width: 95%;
+    background-color: white;
+    border: 2px solid var(--color-primary-700);
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px var(--color-primary-700);
+}
+
+.location-container .left{
+    float: left;
+    width: 35%;
+    height: 200px;
+    margin: 0 1rem;
+}
+
+.location-container .right{
+    font-size:16px;
+    width:100%;
+    width:50%;
+    float:left;
+    padding:0rem;
+    margin-left: 0rem;
+}
+
+.icon {
+    width:100%;
+    float:center;
+    text-decoration: none;
+    color: var(--color-grey-900);
+}
+.icon:hover {
+    transform: scale(1.05);
+}
+.icon:active {
+    color: var(--color-primary-700);
+}
