@@ -14,17 +14,24 @@ html {
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 400;
 }
+body {
+  align-items: center;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 .logoInhaUniv {
   margin: 1rem;
   border-radius: 10px;
   box-shadow: 1px 1px 4px rgba(68, 67, 67, 0.5);
 }
-.container{
+.container {
   margin: 0 2rem 8rem 2rem;
-  
 }
-.container::after{
+.container::after {
   content: "";
   display: block;
   clear: both;
@@ -33,11 +40,6 @@ html {
 .container h2 {
   margin: 4rem 0 2rem 3rem;
   font-size: 1.8rem;
-}
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 li {
   margin: 1rem 1.5rem;
