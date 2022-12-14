@@ -51,8 +51,8 @@ ul {
   text-align: center;
   display: grid;
   grid-template-columns:repeat(5, 15.625rem); 
-  grid-template-rows: repeat(2, 9.375rem ); 
-  margin: auto;
+  grid-template-rows: repeat(2, 4rem ); 
+  justify-content: center;
 }
 #button-container a {
   text-decoration: none;
