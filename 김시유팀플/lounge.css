@@ -14,7 +14,14 @@ html {
     font-family: "Noto Sans KR", sans-serif;
     font-weight: 400;
 }
-
+body {
+    align-items: center;
+  }
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 .container{
     margin: 0 3rem 8rem 3rem;
     
@@ -62,7 +69,16 @@ html {
     padding:0rem;
     margin-left: 0rem;
 }
-
+footer ul {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 4rem;
+  }
+  footer li {
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem 3rem;
+  }
 .icon {
     width:100%;
     float:center;
