@@ -9,6 +9,7 @@ function timetable(props){
         <ul>
             <li>60주년-012 강의실 {props.time}교시 사용 </li>
             <li>60주년-013 강의실 {props.time}교시 미사용</li>
+            <li>60주년-014 강의실 {props.time}교시 미사용</li>
         </ul>
 
     )
