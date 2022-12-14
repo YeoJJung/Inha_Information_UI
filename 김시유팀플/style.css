@@ -49,6 +49,10 @@ ul {
 }
 #button-container {
   text-align: center;
+  display: grid;
+  grid-template-columns:repeat(5, 15.625rem); 
+  grid-template-rows: repeat(2, 9.375rem ); 
+  margin: auto;
 }
 #button-container a {
   text-decoration: none;
@@ -61,7 +65,7 @@ ul {
 .button {
   color: var(--color-primary-700);
   display: inline-block;
-  width: 17%;
+  width: 90%;
   padding: 0.7rem;
   margin: 1rem 1rem;
   border: 2px solid rgb(224, 224, 224);
