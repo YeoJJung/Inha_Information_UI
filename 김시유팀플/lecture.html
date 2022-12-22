@@ -16,12 +16,23 @@
       src="https://kit.fontawesome.com/51099c4b9d.js"
       crossorigin="anonymous"
     ></script>
+    <!-- <script type="text/javascript">
+      var display = false;
+    </script> -->
+  
+    <!-- <script type ="">
+      var display = true;
+      function setButtonTrue(){
+        var con = document.getElementById("myDIV"); 	
+            if(con.style.display=='none'){ 		
+                con.style.display = 'block'; 	
+            }else{ 		
+                con.style.display = 'none'; 	
+            } 
+      }
+    </script> -->
   </head>
   <body>
-    <!-- for React-->
-    <!-- <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
     
     <header>
       <img
@@ -36,30 +47,33 @@
       <div class="location-container">
         <div class="content">
           <h4>교시(시간)</h4>
-          <select size="1">
-            <option value="1" selected>1교시(09:00 ~ 09:30)</option>
-            <option value="2">2교시(09:30 ~ 10:00)</option>
-            <option value="3">3교시(10:00 ~ 10:30)</option>
-            <option value="4">4교시(10:30 ~ 11:00)</option>
-            <option value="5">5교시(11:00 ~ 11:30)</option>
-            <option value="6">6교시(11:30 ~ 12:00)</option>
-            <option value="7">7교시(12:00 ~ 12:30)</option>
-            <option value="8">8교시(12:30 ~ 13:00)</option>
-            <option value="9">9교시(13:00 ~ 13:30)</option>
-            <option value="10">10교시(13:30 ~ 14:00)</option>
-            <option value="11">11교시(14:00 ~ 14:30)</option>
-            <option value="12">12교시(14:30 ~ 15:00)</option>
-            <option value="13">13교시(15:00 ~ 15:30)</option>
-            <option value="14">14교시(15:30 ~ 16:00)</option>
-            <option value="15">15교시(16:00 ~ 16:30)</option>
-            <option value="16">16교시(16:30 ~ 17:00)</option>
-            <option value="17">17교시(17:00 ~ 17:30)</option>
-            <option value="18">18교시(17:30 ~ 18:00)</option>
-            <option value="19">19교시(18:00 ~ 18:30)</option>
-            <option value="20">20교시(18:30 ~ 19:00)</option>
-          </select>
+          <form>
+            <select size="1" onchange="timeClickEvent()" id="time">
+              <option value="1" selected>1교시(09:00 ~ 09:30)</option>
+              <option value="2">2교시(09:30 ~ 10:00)</option>
+              <option value="3">3교시(10:00 ~ 10:30)</option>
+              <option value="4">4교시(10:30 ~ 11:00)</option>
+              <option value="5">5교시(11:00 ~ 11:30)</option>
+              <option value="6">6교시(11:30 ~ 12:00)</option>
+              <option value="7">7교시(12:00 ~ 12:30)</option>
+              <option value="8">8교시(12:30 ~ 13:00)</option>
+              <option value="9">9교시(13:00 ~ 13:30)</option>
+              <option value="10">10교시(13:30 ~ 14:00)</option>
+              <option value="11">11교시(14:00 ~ 14:30)</option>
+              <option value="12">12교시(14:30 ~ 15:00)</option>
+              <option value="13">13교시(15:00 ~ 15:30)</option>
+              <option value="14">14교시(15:30 ~ 16:00)</option>
+              <option value="15">15교시(16:00 ~ 16:30)</option>
+              <option value="16">16교시(16:30 ~ 17:00)</option>
+              <option value="17">17교시(17:00 ~ 17:30)</option>
+              <option value="18">18교시(17:30 ~ 18:00)</option>
+              <option value="19">19교시(18:00 ~ 18:30)</option>
+              <option value="20">20교시(18:30 ~ 19:00)</option>
+            </select>
+          </form> 
+          
           <h4>날짜</h4>
-          <input type="date" name="day" />
+          <input type="date" id="date" /> 
         </div>
       </div>
     </section>
@@ -67,13 +81,19 @@
     
     <!-- <div id="react-button-container"></div> -->
     <section class="container" id="second-container">
+      <button onClick ="setTimetable"> 조회 </button>
+      
+        <!-- <input type="submit" value="조회" onclick="doDisplay();"/> -->
+        
       <!-- 만든 React 컴포넌트를 실행. -->
       <!-- <script src="lecture_button.js" type="text/babel"> 조회</script> -->
       <!-- <button>조회</button> -->
     </section>
 
     <section class="container" id="third-container">
-      
+      <div id="Timetable">
+        <p>test</p>
+      </div>
     </section>
 
   
@@ -91,5 +111,6 @@
         </li>
       </ul>
     </footer>
+    <script src="lecture.js"></script>
   </body>
 </html>
