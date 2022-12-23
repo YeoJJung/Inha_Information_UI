@@ -31,4 +31,16 @@ const dateClickEvent = () =>{
     }
 }
 
+// <timetable 디폴트 설정: 보이지 않음> 
+document.getElementById("timetable").style.display = 'none';
+
 // <조회 버튼 눌렀을 때 강의실 정보 표시>
+function setTimetable(){
+    var target = document.getElementById("timetableList");
+          var li = target.getElementsByTagName("li");
+          for(var i = 0; i<li.length; i++){
+            li[i].innerText = "test";
+          }
+    //설정 이후 화면에 보이게
+    document.getElementById("timetable").style.display = 'block'; 
+}
