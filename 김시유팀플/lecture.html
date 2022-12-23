@@ -16,24 +16,9 @@
       src="https://kit.fontawesome.com/51099c4b9d.js"
       crossorigin="anonymous"
     ></script>
-    <!-- <script type="text/javascript">
-      var display = false;
-    </script> -->
-  
-    <!-- <script type ="">
-      var display = true;
-      function setButtonTrue(){
-        var con = document.getElementById("myDIV"); 	
-            if(con.style.display=='none'){ 		
-                con.style.display = 'block'; 	
-            }else{ 		
-                con.style.display = 'none'; 	
-            } 
-      }
-    </script> -->
+    
   </head>
   <body>
-    
     <header>
       <img
         src="images/logoinhauniv.jpg"
@@ -41,14 +26,13 @@
         class="logoInhaUniv"
       />
     </header>
-
     <section class="container" id="first-container">
       <h2>60주년 기념관 빈 강의실 조회</h2>
       <div class="location-container">
         <div class="content">
           <h4>교시(시간)</h4>
           <form>
-            <select size="1" onchange="timeClickEvent()" id="time">
+            <select size="1" onchange="timeClickEvent()" id="time" title="selectTime">
               <option value="1" selected>1교시(09:00 ~ 09:30)</option>
               <option value="2">2교시(09:30 ~ 10:00)</option>
               <option value="3">3교시(10:00 ~ 10:30)</option>
@@ -71,32 +55,17 @@
               <option value="20">20교시(18:30 ~ 19:00)</option>
             </select>
           </form> 
-          
           <h4>날짜</h4>
-          <input type="date" id="date" /> 
+          <form>
+            <input type="date" onchange="dateClickEvent()" id="checkedDate" title="checkedDate"/> 
+          </form>
         </div>
       </div>
-    </section>
-    
-    
-    <!-- <div id="react-button-container"></div> -->
-    <section class="container" id="second-container">
-      <button onClick ="setTimetable"> 조회 </button>
       
-        <!-- <input type="submit" value="조회" onclick="doDisplay();"/> -->
-        
-      <!-- 만든 React 컴포넌트를 실행. -->
-      <!-- <script src="lecture_button.js" type="text/babel"> 조회</script> -->
-      <!-- <button>조회</button> -->
+      <button > 조회 </button>
     </section>
-
-    <section class="container" id="third-container">
-      <div id="Timetable">
-        <p>test</p>
-      </div>
-    </section>
-
-  
+    
+    
     <footer class="icons">
       <ul>
         <li>
