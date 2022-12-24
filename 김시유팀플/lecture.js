@@ -34,13 +34,27 @@ const dateClickEvent = () =>{
 // <timetable 디폴트 설정: 보이지 않음> 
 document.getElementById("timetable").style.display = 'none';
 
-// <조회 버튼 눌렀을 때 강의실 정보 표시>
+// <난수를 생성하는 함수: 난수의 배수인 교시를 사용 처리함>
+function setRandom(){
+    var random = Math.floor(Math.random()*7);
+    return random;
+}
+
+//<조회 버튼 눌렀을 때 강의실 정보 표시>
 function setTimetable(){
+    var time = timeOptionEls.options[timeOptionEls.selectedIndex].value;
+    var date = dateOptionEl.value;
+    var random = setRandom();
+
     var target = document.getElementById("timetableList");
-          var li = target.getElementsByTagName("li");
-          for(var i = 0; i<li.length; i++){
-            li[i].innerText = "test";
-          }
+        var li = target.getElementsByTagName("li");
+        for(var i = 0; i<li.length; i++){
+            if((i+1) % random === 0){
+                li[i].innerText = `60주년 - 0${i+1} 강의실 ${time}교시 사용 (${date})`;
+            }else{
+                li[i].innerText = `60주년 - 0${i+1} 강의실 ${time}교시 미사용 (${date})`;
+            }
+        }
     //설정 이후 화면에 보이게
-    document.getElementById("timetable").style.display = 'block'; 
+    document.getElementById("timetable").style.display = "block"; 
 }
