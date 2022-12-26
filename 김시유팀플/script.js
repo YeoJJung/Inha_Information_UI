@@ -1,7 +1,7 @@
-var target = document.querySelectorAll(".btn_open");
-var btnPopClose = document.querySelectorAll(".pop_wrap .btn_close");
-var targetID;
-var back;
+const target = document.querySelectorAll(".btn_open");
+const btnPopClose = document.querySelectorAll(".pop_wrap .btn_close");
+let targetID;
+let back;
 
 // 팝업 열기
 for (var i = 0; i < target.length; i++) {
@@ -19,5 +19,5 @@ for (var j = 0; j < target.length; j++) {
 }
 
 function back() {
-  history.back(); 
+  history.back();
 }
