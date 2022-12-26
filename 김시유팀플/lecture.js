@@ -2,6 +2,7 @@ var time;
 var date;
 var dayOfWeek;
 
+
 // <선택한 날짜가 주말인지 아닌지 판정하는 함수>
 function getDayOfWeek(date){ 
     const week = ['일', '월', '화', '수', '목', '금', '토'];
@@ -40,21 +41,35 @@ function setRandom(){
     return random;
 }
 
+//<조회 버튼 다시 눌렀을 때 기존 시간표 정보를 보이지 않게 하기 위해 삭제>
+function deleteTimetable(){
+    const target = document.getElementById("timetableList");
+    while(target.firstChild){
+        target.removeChild(target.firstChild);
+    }
+}
+
 //<조회 버튼 눌렀을 때 강의실 정보 표시>
 function setTimetable(){
+    deleteTimetable();
+
     var time = timeOptionEls.options[timeOptionEls.selectedIndex].value;
     var date = dateOptionEl.value;
     var random = setRandom();
 
-    var target = document.getElementById("timetableList");
-        var li = target.getElementsByTagName("li");
-        for(var i = 0; i<li.length; i++){
-            if((i+1) % random === 0){
-                li[i].innerText = `60주년 - 0${i+1} 강의실 ${time}교시 사용 (${date})`;
-            }else{
-                li[i].innerText = `60주년 - 0${i+1} 강의실 ${time}교시 미사용 (${date})`;
-            }
+    const target = document.getElementById("timetableList");
+
+    for(var i = 0; i<20; i++){
+         let listEl = document.createElement("li");
+        if((i+1) % random === 0){
+            listEl.innerHTML = `<p>60주년 - 0${i+1} 강의실 ${time}교시 
+            <span style='color:red'> 사용 </span> <span> (${date})</span> </p>`;
+        }else{
+            listEl.innerHTML = `<p>60주년 - 0${i+1} 강의실 ${time}교시 
+            <span style='color:blue'> 미사용 </span> <span>(${date})</span> </p>`;
         }
+        target.appendChild(listEl);
+    }
     //설정 이후 화면에 보이게
     document.getElementById("timetable").style.display = "block"; 
 }
